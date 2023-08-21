@@ -5,7 +5,7 @@
                <div>
                   <a href="{{ route('posts.show', ['user' => $post->user ,'post' => $post]) }}">
                         <div class="flex w-full items-center">
-                           <img src="{{ asset('perfiles') . '/' . $post->user->imagen }}" alt="Imagen de perfil" class="md:h-10 md:w-10 max-md:w-4 max-md:h-4 rounded-full">
+                           <img src="{{ asset('perfiles') . '/' . $post->user->imagen }}" alt="Imagen de perfil" class="md:h-10 md:w-10 w-4 h-4 rounded-full">
                            <h1 class="p-5">{{ $post->user->username }}</h1>
                         </div>   
                     
