@@ -4,8 +4,12 @@
             @foreach ($posts as $post)
                <div>
                   <a href="{{ route('posts.show', ['user' => $post->user ,'post' => $post]) }}">
-                        <img  src="{{ asset('uploads') . '/' . $post->imagen }}" alt="Imagen del post {{ $post->titulo }}"> 
-   
+                        <div class="flex w-full items-center">
+                           <img src="{{ asset('perfiles') . '/' . $post->user->imagen }}" alt="Iamgen de perfil" class="w-10 rounded-lg">
+                           <h1 class="p-5">{{ $post->user->username }}</h1>
+                        </div>   
+                    
+                        <img  src="{{ asset('uploads') . '/' . $post->imagen }}" alt="Imagen del post {{ $post->titulo }}">    
                   </a>
                </div>
             @endforeach
