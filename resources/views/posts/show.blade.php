@@ -6,7 +6,7 @@
 
 @section('contenido')
     <div class="container mx-auto md:flex"> 
-        <div class="md:w-1/2 max-md:p-5">
+        <div class="md:w-1/2">
              
             <img src="{{ asset('uploads') . '/' . $post->imagen }}" alt="Imagen del post {{ $post->titulo }}" />
              
@@ -16,7 +16,7 @@
                 @endauth
             </div>    
 
-            <div>
+            <div class="p-5">
                 <p class="font-bold">{{ $post->user->username }}</p>
                 <p class="text-sm text-gray-500">
                     {{ $post->created_at->diffForHumans() }}
