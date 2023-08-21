@@ -15,8 +15,8 @@
                     <livewire:like-post :post="$post" />                    
                 @endauth
             </div>    
-
-            <div class="p-5">
+           
+            <div class="max-md:p-5">
                 <p class="font-bold">{{ $post->user->username }}</p>
                 <p class="text-sm text-gray-500">
                     {{ $post->created_at->diffForHumans() }}
