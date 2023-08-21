@@ -1,7 +1,7 @@
 @extends('layouts/app')
 
 @section('titulo')
-    
+    Cambio el titulo
 @endsection
 
 @section('contenido')
