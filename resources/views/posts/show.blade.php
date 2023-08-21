@@ -16,7 +16,7 @@
                 @endauth
             </div>    
            
-            <div class="max-md:p-5">
+            <div class="max-lg:p-5">
                 <p class="font-bold">{{ $post->user->username }}</p>
                 <p class="text-sm text-gray-500">
                     {{ $post->created_at->diffForHumans() }}
